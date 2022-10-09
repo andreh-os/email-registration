@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(255, 100, 100), rgb(10, 10, 10));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > main {
+  display: flex;
+  width: 800px;
+}
+
+body > main > div.container {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+body > main > div > div.logo {
+  padding: 20px;
+}
+body > main > div > div > h6 {
+  background-color: rgb(255, 100, 100);
+  color: white;
+  width: fit-content;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+body > main > div > div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+body > main > div > div > div.textcontainer {
+  width: 70%;
+  text-align: justify;
+  color: rgb(255, 100, 100);
+}
+
+body > main > div > div > div.form {
+  margin: 25px;
+}
+input,
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 100, 100);
+  color: white;
+}
+input:focus {
+  outline: 0;
+}
+
+input:focus::placeholder {
+  text-align: left;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  transition: transform 0.5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+body > main > div > img {
+  height: 400px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
